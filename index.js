@@ -16,8 +16,6 @@ app.get('/random/number', (req, res) => {
   const min = parseInt(req.query.min) || 1;
   const max = parseInt(req.query.max) || 100;
 
-
-  
   if (min > max) {
     return res.status(400).json({ error: 'min cannot be greater than max.' });
   }
