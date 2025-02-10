@@ -11,10 +11,6 @@ app.get('/', (req, res) => {
   res.send('Welcome to the Random Data Generator API! Use /random/number, /random/string, or /random/color.');
 });
 
-
-
-
-
 // Generate a random number between min and max
 app.get('/random/number', (req, res) => {
   const min = parseInt(req.query.min) || 1;
